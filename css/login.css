@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    height: 100vh; /* Ensures body takes full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/back4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%; /*changes ke liye esko comment kare*/
+    gap: 90px; /* Added gap to increase space between the sections */
+}
+
+.container {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    position: relative;
+    padding: 40px;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+}
+
+.form-container {
+    position: relative;
+    z-index: 1;
+}
+
+.opacity {
+    opacity: 0.9;
+}
+
+input[type="password"] {
+    width: 93%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.register-forget {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.register-forget a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .login-section {
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"], input[type="password"], button {
+        padding: 12px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .login-section {
+        gap: 15px; /* Adjust gap for even smaller screens */
+    }
+}
